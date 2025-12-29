@@ -111,7 +111,7 @@ const Footer = () => {
   return (
     <footer style={styles.footer}>
       <h3 style={{color: '#B8860B', marginBottom: '10px'}}>Liquid Gold Perfumes</h3>
-      <p style={{marginBottom: '20px'}}>The scent that defines your class.</p>
+      <p style={{marginBottom: '20px', color:'white'}}>The scent that defines your class.</p>
       
       {/* SOCIAL MEDIA LINKS */}
       <div style={{marginBottom: '30px', display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap'}}>
