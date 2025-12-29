@@ -181,7 +181,7 @@ function App() {
 
 // --- 4. STYLES (KWALLIYA) ---
 const styles = {
-  container: { fontFamily: 'Arial, sans-serif', background: '#D4AF37', minHeight: '100vh', width: '100%', margin: 0, padding: 0 },
+  container: { fontFamily: 'Arial, sans-serif', background: '#D4AF37', minHeight: '100vh', width: '100%', margin: 0, padding: 0, display:'flex', flexDirection:'column', overflowX:'hidden' },
   
   // Navbar
   nav: { 
@@ -192,7 +192,7 @@ const styles = {
   btn: { padding: '10px 20px', margin: '0 5px', border: 'none', background: 'transparent', fontSize: '16px', cursor: 'pointer', color: '#333' },
   activeBtn: { padding: '10px 20px', margin: '0 5px', border: 'none', background: '#B8860B', color: 'white', borderRadius: '20px', fontSize: '16px', cursor: 'pointer' },
 
-  content: { width: '100%', padding: '0', boxSizing: 'border-box' },
+  content: { width: '100%', padding: '20px', boxSizing: 'border-box', flex:'1' },
 
   // --- SABON STYLE NA LANDING PAGE ---
   heroSection: {
@@ -207,35 +207,99 @@ const styles = {
     color: 'white',
     textAlign: 'center'
   },
-  heroOverlay: { padding: '20px', maxWidth: '800px' },
-  heroTitle: { fontSize: '48px', marginBottom: '20px', color: '#D4AF37' },
-  heroSubtitle: { fontSize: '20px', marginBottom: '30px', lineHeight: '1.5' },
+  heroOverlay: { padding: '20px', 
+    maxWidth: '800px' },
+  heroTitle: { fontSize: '48px', 
+    marginBottom: '20px', color: '#D4AF37' },
+  heroSubtitle: { fontSize: '20px', 
+    marginBottom: '30px', 
+    lineHeight: '1.5' },
   heroBtn: {
-    padding: '15px 40px', fontSize: '18px', backgroundColor: '#D4AF37', color: 'white', 
-    border: 'none', borderRadius: '30px', cursor: 'pointer', fontWeight: 'bold', transition: '0.3s'
+    padding: '15px 40px', 
+    fontSize: '18px', 
+    backgroundColor: '#D4AF37', 
+    color: 'white', 
+    border: 'none', 
+    borderRadius: '30px', 
+    cursor: 'pointer', 
+    fontWeight: 'bold', 
+    transition: '0.3s'
   },
   
   featuresSection: {
-    display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '30px', padding: '60px 20px', backgroundColor: 'blurywhite'
+    display: 'flex', 
+    justifyContent: 'center', 
+    flexWrap: 'wrap', 
+    gap: '30px', padding: '60px 20px', backgroundColor: 'blurywhite'
   },
   featureCard: {
     width: '300px', padding: '20px', textAlign: 'center', borderRadius: '10px', boxShadow: '0 4px 10px rgba(0,0,0,0.1)'
   },
 
   // Shop & About Styles
-  grid: { display: 'flex', flexWrap: 'wrap', gap: '30px', justifyContent: 'center', width: '100%', padding: '40px 20px' },
-  card: { background: 'white', padding: '15px', borderRadius: '10px', width: '250px', boxShadow: '0 2px 5px rgba(0,0,0,0.05)', textAlign: 'center' },
-  img: { width: '100%', height: '200px', objectFit: 'cover', borderRadius: '5px' },
-  name: { color: '#B8860B', margin: '10px 0', fontSize: '18px', fontWeight: 'bold' },
-  whatsappBtn: { display: 'inline-block', background: '#25D366', color: 'white', padding: '10px 20px', borderRadius: '5px', textDecoration: 'none', fontWeight: 'bold', marginTop: '10px', cursor: 'pointer' },
+  grid: { display: 'flex', 
+    flexWrap: 'wrap', 
+    gap: '30px', 
+    justifyContent: 'center', 
+    width: '100%', 
+    padding: '40px 20px' },
+  card: { background: 'white', 
+    padding: '15px', 
+    borderRadius: '10px', 
+    width: '250px', 
+    boxShadow: '0 2px 5px rgba(0,0,0,0.05)', 
+    textAlign: 'center' },
+  img: { width: '100%', 
+    height: '200px', 
+    objectFit: 'cover', 
+    borderRadius: '5px' },
+  name: { color: '#B8860B', 
+    margin: '10px 0', 
+    fontSize: '18px', 
+    fontWeight: 'bold' },
+  whatsappBtn: { display: 'inline-block', 
+    background: '#25D366', 
+    color: 'white', 
+    padding: '10px 20px', 
+    borderRadius: '5px', 
+    textDecoration: 'none', 
+    fontWeight: 'bold', 
+    marginTop: '10px', 
+    cursor: 'pointer' },
   
-  ceoSection: { backgroundColor: '#D4AF37', width: '100%', padding: '60px 20px', color: 'white', textAlign: 'center' },
-  ceoImage: { width: '200px', height: '200px', borderRadius: '50%', objectFit: 'cover', border: '5px solid white', margin: '20px auto', display: 'block' },
-  partnersSection: { padding: '50px 20px', backgroundColor: '#555', width: '100%', textAlign: 'center' },
-  partnersGrid: { display: 'flex', justifyContent: 'center', gap: '50px', marginTop: '30px', flexWrap: 'wrap' },
-  partnerLogo: { width: '100px', height: '100px', borderRadius: '50%', objectFit: 'cover', border: '1px solid #eee' },
+  ceoSection: { backgroundColor: '#D4AF37', 
+    width: '100%', 
+    padding: '60px 20px', 
+    color: 'white', 
+    textAlign: 'center' },
+  ceoImage: { width: '200px', 
+    height: '200px', 
+    borderRadius: '50%', 
+    objectFit: 'cover', 
+    border: '5px solid white', 
+    margin: '20px auto', 
+    display: 'block' },
+  partnersSection: { padding: '50px 20px', 
+    backgroundColor: '#555', 
+    width: '100%', 
+    textAlign: 'center' },
+  partnersGrid: { display: 'flex', 
+    justifyContent: 'center', 
+    gap: '50px', 
+    marginTop: '30px', 
+    flexWrap: 'wrap' },
+  partnerLogo: { width: '100px', 
+    height: '100px', 
+    borderRadius: '50%', 
+    objectFit: 'cover', 
+    border: '1px solid #eee' },
 
-  footer: { backgroundColor: '#1a1a1a', color: 'golden', padding: '50px 20px', textAlign: 'center', width: '100%', marginTop: 'auto' },
+  footer: { backgroundColor: '#1a1a1a', 
+    color: 'golden', 
+    padding: '50px 20px', 
+    textAlign: 'center', 
+    width: '100%', 
+    marginTop: 'auto' },
  
   socialLink: {
     textDecoration: 'none',
