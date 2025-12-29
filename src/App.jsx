@@ -96,7 +96,7 @@ function App() {
           style={{cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '10px'}}
         >
           {/* Tabbatar hoton logo yana 'public' folder mai suna 'logo.png' */}
-          <img src="/logo.png" alt="LG" style={{height: '40px'}} /> 
+          <img src="/logo2.jpeg" alt="LG" style={{height: '40px'}} /> 
           <h2 style={{margin: 0, color: '#B8860B', fontSize: '20px'}}>Liquid Gold</h2>
         </div>
 
@@ -105,12 +105,12 @@ function App() {
           <button 
             onClick={() => setActivePage('shop')} 
             style={activePage === 'shop' ? styles.activeBtn : styles.btn}>
-            Kayan Mu
+            Our Product
           </button>
           <button 
             onClick={() => setActivePage('about')} 
             style={activePage === 'about' ? styles.activeBtn : styles.btn}>
-            Game da Mu
+            About Us
           </button>
         </div>
       </nav>
@@ -133,13 +133,13 @@ function App() {
 
 // --- 4. STYLES (KWALLIYA) ---
 const styles = {
-  container: { fontFamily: 'Arial, sans-serif', background: '#f9f9f9', minHeight: '100vh', width: '100%', margin: 0, padding: 0 },
+  container: { fontFamily: 'Arial, sans-serif', background: '#f6e420ff', minHeight: '100vh', width: '100%', margin: 0, padding: 0 },
   
   // Navbar Styles - MUHIMMI
   nav: { 
     width: '100%', 
     padding: '15px 30px', // Dan space a gefe da gefe
-    background: 'white', 
+    background: 'goldenrod', 
     display: 'flex', 
     justifyContent: 'space-between', // Hagu da Dama
     alignItems: 'center',
@@ -161,7 +161,7 @@ const styles = {
   // About Styles
   ceoSection: { backgroundColor: '#D4AF37', width: '100%', padding: '60px 20px', color: 'white', textAlign: 'center' },
   ceoImage: { width: '200px', height: '200px', borderRadius: '50%', objectFit: 'cover', border: '5px solid white', margin: '20px auto', display: 'block' },
-  partnersSection: { padding: '50px 20px', backgroundColor: 'white', width: '100%', textAlign: 'center' },
+  partnersSection: { padding: '50px 20px', backgroundColor: 'Golden', width: '100%', textAlign: 'center' },
   partnersGrid: { display: 'flex', justifyContent: 'center', gap: '50px', marginTop: '30px', flexWrap: 'wrap' },
   partnerLogo: { width: '100px', height: '100px', borderRadius: '50%', objectFit: 'cover', border: '1px solid #eee' },
 
