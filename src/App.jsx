@@ -24,7 +24,7 @@ const partners = [
 // --- 2. COMPONENTS ---
 
 const PerfumeCard = ({ turare }) => {
-  const phoneNumber = "2348012345678"; 
+  const phoneNumber = "2348034910389"; 
   const message = `Hello, I want to buy ${turare.name}`;
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
